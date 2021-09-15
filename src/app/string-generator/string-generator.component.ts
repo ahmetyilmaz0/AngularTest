@@ -10,7 +10,7 @@ import { Observable, Subscription, timer } from 'rxjs';
 export class StringGeneratorComponent implements OnInit,OnDestroy {
   subscription: Subscription = new Subscription;
   //Use RxJs when setting the display every 3 seconds.
-  delay: Observable<number> = timer(0, 500);
+  delay: Observable<number> = timer(0, 3000);
   public text='';
   public color='';
   public condition=true;
